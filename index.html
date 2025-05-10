@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Juan Mendes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">JM</div>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Juan Mendes</h1>
+            <h2>Desenvolvedor Full Stack</h2>
+            <div class="social-links">
+                <a href="https://github.com/juanmmendes" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/seu-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou Juan Mendes, um desenvolvedor full stack apaixonado por criar soluções web criativas e funcionais. Com experiência em diversas tecnologias e frameworks, busco sempre aprender e aplicar as melhores práticas de desenvolvimento.</p>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/300/300" alt="Juan Mendes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul id="frontend-skills" class="skills-list">
+                        <!-- Preenchido via JavaScript -->
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul id="backend-skills" class="skills-list">
+                        <!-- Preenchido via JavaScript -->
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <ul id="tools-skills" class="skills-list">
+                        <!-- Preenchido via JavaScript -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="github-stats">
+                <h3>Minhas Estatísticas no GitHub</h3>
+                <div class="stats-container">
+                    <div class="stats-card">
+                        <img id="github-general-stats" src="https://github-readme-stats.vercel.app/api?username=juanmmendes&show_icons=true&theme=tokyonight&count_private=true&hide_border=false" alt="GitHub Stats">
+                    </div>
+                    <div class="stats-card">
+                        <img id="github-language-stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=juanmmendes&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages">
+                    </div>
+                </div>
+
+                <div id="repo-languages" class="language-distribution">
+                    <!-- Gráfico de linguagens será inserido via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Projetos serão carregados dinamicamente via GitHub API -->
+                <div class="project-loading">Carregando projetos...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@exemplo.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(XX) XXXXX-XXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Sua Cidade, Estado</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Juan Mendes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/github-api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
