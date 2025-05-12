@@ -113,3 +113,13 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Typing animation for job title
+            new Typed('#typed-output', {
+                strings: ['Desenvolvedor Full Stack'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                backDelay: 2000
+            });
+        });

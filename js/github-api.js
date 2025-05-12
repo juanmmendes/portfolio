@@ -88,9 +88,34 @@ function createProjectCard(repo) {
 
 // Função para determinar a imagem com base no nome ou descrição do repositório
 function getRepoImage(repo) {
-    // Aqui você poderia implementar uma lógica mais sofisticada para escolher imagens baseadas em palavras-chave
-    // Por enquanto, usamos um placeholder
-    return `/api/placeholder/600/400`;
+  const name = repo.name.toLowerCase();
+  const description = repo.description?.toLowerCase() || "";
+
+  const keywords = [
+    "portfolio",
+    "blog",
+    "ecommerce",
+    "api",
+    "dashboard",
+    "chat",
+    "game",
+    "landing",
+    "bot",
+    "finance",
+    "weather",
+    "todo"
+  ];
+
+  // Procura pela primeira palavra-chave que aparecer no nome ou descrição
+  for (const keyword of keywords) {
+    if (name.includes(keyword) || description.includes(keyword)) {
+      // Usa imagem temática do Unsplash
+      return `https://source.unsplash.com/600x400/?${keyword}`;
+    }
+  }
+
+  // Se não encontrar nenhuma palavra-chave, usa uma imagem genérica
+  return "https://source.unsplash.com/600x400/?technology,code";
 }
 
 // Função para coletar todas as linguagens de todos os repositórios
