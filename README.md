@@ -97,4 +97,4 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para d
 
 ---
 
-Feito com ❤️ por [Juan Mendes](https://github.com/juanmmendes)
+Feito por [Juan Mendes](https://github.com/juanmmendes)
