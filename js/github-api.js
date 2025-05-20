@@ -65,7 +65,7 @@ function createProjectCard(repo) {
         : 'Sem descrição disponível';
     
     card.innerHTML = `
-        <img class="project-img" src="${imageUrl}" alt="${repo.name}">
+        
         <div class="project-info">
             <h3>${repo.name}</h3>
             <p>${description}</p>

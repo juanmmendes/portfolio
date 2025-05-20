@@ -547,13 +547,12 @@ ul {
 }
 
 .stats-card {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  overflow: hidden;
+  display: inline-block; /* ou block, dependendo do layout */
+  width: auto;            /* ajusta conforme o conteúdo */
   background-color: white;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  padding: 1rem;          /* importante para espaçamento interno */
 }
 
 .stats-card img {
