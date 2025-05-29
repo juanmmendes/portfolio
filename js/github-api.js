@@ -5,7 +5,7 @@
 
 // Configurações
 const username = 'juanmmendes'; // Seu nome de usuário do GitHub
-const maxProjects = 6; // Número máximo de projetos para exibir
+const maxProjects = 15; // Número máximo de projetos para exibir
 
 // Elementos DOM
 const projectsGrid = document.getElementById('projects-grid');
