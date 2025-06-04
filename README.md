@@ -82,10 +82,6 @@ O portfólio exibe automaticamente:
 
 Para ver uma demonstração do site, acesse: [https://juanmmendes.github.io/portfolio](https://juanmmendes.github.io/portfolio)
 
-## 📜 Licença
-
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
 ---
 
 ## 📈 Minhas estatísticas no GitHub
